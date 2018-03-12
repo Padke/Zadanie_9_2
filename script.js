@@ -11,7 +11,7 @@ function addingName(name) {
        console.log("MAMY TO IMIĘ!!!!");
     }
     else {
-       all.splice(0, 0, name);
+       all.push(name);
        console.log(all);
     }
 }
