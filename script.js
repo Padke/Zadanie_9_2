@@ -6,12 +6,11 @@ console.log(all);
 
 
 function addingName(name) {
-    var addedName = all.indexOf(name);
-    if(addedName == true) {
+    if(all.indexOf(name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()) !== -1) {
        console.log("MAMY TO IMIĘ!!!!");
     }
     else {
-       all.push(name);
+       all.push(name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
        console.log(all);
     }
 }
